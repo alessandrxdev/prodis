@@ -1,0 +1,9 @@
+body{
+    background: #212121;
+    color: #C8C8B8;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 1em;
+}
+a:link, a:visited{
+    color: #888878;
+}
