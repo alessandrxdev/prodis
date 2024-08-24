@@ -1,9 +1,22 @@
-body{
-    background: #212121;
-    color: #C8C8B8;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    padding: 1em;
+body {
+  background: #0C151D;
+  color: #FFF;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 }
-a:link, a:visited{
-    color: #888878;
+main{
+  padding: 1rem;
+}
+
+a:link,
+a:visited {
+  color: #888878;
+}
+
+footer {
+  padding: 2rem;
+  background: #888878;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
 }

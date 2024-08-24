@@ -1,22 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
-
+  <title>Prodis</title>
   <!-- Custom Styles -->
+  <!-- Fontawesome icons-->
   <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+<header>
+
+  <h1>Prodis</h1>
+
+</header>
 
 <body>
-  <p>Nothing to see here...</p>
-  <!-- Project -->
-  <script src="main.js"></script>
+  <main>
+    <div class="content">
+
+      <h1 style="text-align: center">Proyectos</h1>
+
+      <img src="images/billetera.png" alt="Billetera" class="imagen-redondeada" />
+
+      <h3>Billetera</h3>
+      <p style="font-size: 14px; color: #B3B3A7">Billetera es una aplicación para dispositivos Android que te ayuda a guardar las tarjetas de Bancos Cubanos, así como conocer las tasas de cambio actual y contar dinero fácilmente</p>
+      <button class="boton-redondeado" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.arr.bancamovil';" <i class="fa-brands fa-google-play" style="padding: 6px;"></i>Descargar</button>
+
+      <h1 style="margin-top: 60px">Contacto</h1>
+      <!-- email-->
+      <div style="display: inline-block">
+        <i class="fa-solid fa-envelope" style="padding: 6px;"></i>
+        <a href="mailto:contactoprodis@proton.me">contactoprodis@proton.me </a>
+      </div>
+    </div>
+
+    <!-- Project -->
+
+  </main>
 </body>
+
+<!-- Footer -->
+<footer>
+  <div>
+
+    <i onclick="window.location.href='https://github.com/alessandrxdev/prodis';" style="margin: 6px;" class="fa-brands fa-github fa-2xl"></i>
+
+    <i onclick="window.location.href='https://t.me/ProdisCU';" style="margin: 6px;" class="fa-brands fa-telegram fa-2xl"></i>
+  </div>
+  <p style="margin-top: 20px;">© 2024 PRODIS BY ALESSANDRO RODRÍGUEZ<br />SOFTWARE WITH ♥ FROM SANTA CLARA, CUBA.</p>
+
+</footer>
+
 </html>
