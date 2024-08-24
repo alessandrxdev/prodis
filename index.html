@@ -18,33 +18,71 @@
 </head>
 <header>
 
-  <h1>Prodis</h1>
+  <h1 style="font-family: Silkscreen; color: #ECDFCC">Prodis</h1>
 
 </header>
+
+
+<!--- contenido de la web -->
 
 <body>
   <main>
     <div class="content">
 
-      <h1 style="text-align: center">Proyectos</h1>
-
-      <img src="images/billetera.png" alt="Billetera" class="imagen-redondeada" />
-
-      <h3>Billetera</h3>
-      <p style="font-size: 14px; color: #B3B3A7">Billetera es una aplicación para dispositivos Android que te ayuda a guardar las tarjetas de Bancos Cubanos, así como conocer las tasas de cambio actual y contar dinero fácilmente</p>
-      
-      <div class="boton-redondeado" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.arr.bancamovil';" <i class="fa-brands fa-google-play" style="padding: 6px;"</i>Descargar</div>
-
-      <h1 style="margin-top: 60px">Contacto</h1>
-      <!-- email-->
-      <div style="display: inline-block">
-        <i class="fa-solid fa-envelope" style="padding: 6px;"></i>
-        <a href="mailto:contactoprodis@proton.me">contactoprodis@proton.me </a>
-      </div>
+      <!-- Breve presentación de lo que somos-->
+      <h4>¿Quienes somos?</h4>
+      <p style="font-size: 13px;">Prodis es el nombre que usamos para identificar las aplicaciones móviles que creamos. Nos gusta pensar en Prodis como una empresa de software dedicada a ofrecer soluciones móviles innovadoras y de alta calidad.</br>Conoce más sobre las aplicaciones que hemos creado. ¡Contáctanos para discutir tus necesidades y juntos encontremos la solución perfecta para ti!</p>
     </div>
 
-    <!-- Project -->
+    <!-- Proyectos -->
+    <div style="background: #3C3D37; padding: 2rem;">
+      <h2 style="text-align: center; color: white; margin-top: 50px;">Proyectos</h2>
 
+      <!-- App Billetera -->
+      <div class="imagen-redondeada">
+        <img src="/images/billetera-app.png" alt="billetera.png" style="width: 100%; border-radius: 17px;" />
+
+        <!-- titulo y descripcion del proyecto-->
+        <div style="padding: 1rem;">
+          <h3>Billetera</h3>
+          <p style="font-size: 13px">
+            Billetera es una aplicación para dispositivos con sistema operativo Android, creada con el objetivo de ayudar a los usarios de bancos Cubanos a guardar sus tarjetas de créditos para futuros usos, conocer las tasas de cambio vigentes en el país y contar dinero de forma rápida y sencilla.
+          </p>
+          <!-- botones de información -->
+
+          <!-- Github -->
+          <button onclick="window.location.href='https://www.github.com/alessandrxdev/billetera';" class="boton-redondeado"><i class="fa-brands fa-github fa-x1"></i></button>
+
+          <!-- Play Store-->
+          <button onclick="window.location.href='https://play.google.com/store/apps/details?id=com.arr.bancamovil';" class="boton-redondeado">
+            <i class="fa-brands fa-google-play fa-x1"></i>
+          </button>
+
+        </div>
+      </div>
+
+
+      <!-- Apklis librería-->
+      <div class="imagen-redondeada">
+        <img src="/images/apklis.png" alt="apklis-lib.png" style="width: 100%; border-radius: 17px;" />
+
+        <!-- titulo y descripcion del proyecto-->
+        <div style="padding: 1rem;">
+          <h3>ApklisApi</h3>
+          <p style="font-size: 13px">
+            ApklisApi es una librería creada para interactiar con la información de las aplicaciones alojadas en la tienda de aplicaciones Cubana <b>Apklis</b>, asi como comprobar las compras de aplicaciones realizadas en dicha tienda.
+          </p>
+
+          <!-- botones de información -->
+
+          <!-- Github -->
+          <button onclick="window.location.href='https://www.github.com/alessandrxdev/apklisapi';" class="boton-redondeado"><i class="fa-brands fa-github fa-x1"></i></button>
+
+        </div>
+      </div>
+      
+      
+    </div>
   </main>
 </body>
 
@@ -56,6 +94,8 @@
 
     <i onclick="window.location.href='https://t.me/ProdisCU';" style="margin: 6px;" class="fa-brands fa-telegram fa-2xl"></i>
   </div>
+
+
   <p style="margin-top: 20px;">© 2024 PRODIS BY ALESSANDRO RODRÍGUEZ<br />SOFTWARE WITH ♥ FROM SANTA CLARA, CUBA.</p>
 
 </footer>

@@ -1,11 +1,22 @@
+@font-face {
+  font-family: Silkscreen;
+  src: url('fonts/slkscr.ttf') format('truetype');
+}
+
+p,
+h2,
+h4 {
+  font-family: Helvetica;
+}
+
 body {
-  background: #0C151D;
+  background: #1E201E;
   color: #FFF;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 header {
-  background: #0C151D;
+  background: #1E201E;
   padding: 1rem;
   position: fixed;
   width: 100%;
@@ -19,43 +30,47 @@ main {
 
 .content {
   padding: 2rem;
+  margin-top: 30px;
+}
+
+img{
+  pointer-events: none;
+
 }
 
 .imagen-redondeada {
   border-radius: 20px;
+  border: 2px solid #61613B;
   width: 100%;
+  margin-top: 20px;
 }
-
 
 .boton-redondeado {
-  background-color: #777761;
-  /* Color de fondo */
-  color: white;
-  /* Color del texto */
-  padding: 15px 30px;
-  /* Espaciado interno */
-  text-align: center;
-  /* Alineación del texto */
-  text-decoration: none;
-  /* Sin subrayado */
-  display: inline-block;
-  /* Mostrar en línea */
-  font-size: 13px;
-  /* Tamaño de fuente */
-  margin: 4px 2px;
-  /* Margen */
-  cursor: pointer;
-  /* Cursor de mano al pasar sobre el botón */
-  border-radius: 25px;
-  /* Borde redondeado */
+  background: #ECDFCC;
+  border-radius: 50%;
   border: none;
-  /* Sin borde */
-  transition: background-color 0.3s ease;
-  /* Transición para el cambio de color */
+  padding: 12px 14px;
+  cursor: pointer;
+  text-align: center;
 }
 
+/*
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: none;
+  transition: background-color 0.3s ease;
+  
+}*/
+
 .boton-redondeado:hover {
-  background-color: #61613B;
+  background-color: #ECDFCC;
   /* Color de fondo al pasar el mouse por encima */
 }
 
@@ -66,7 +81,7 @@ a:visited {
 
 footer {
   padding: 2rem;
-  background: #777761;
+  background: none;
   color: #fff;
   font-size: 12px;
   text-align: center;
