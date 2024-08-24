@@ -32,7 +32,7 @@ main {
   /* Color de fondo */
   color: white;
   /* Color del texto */
-  padding: 12px 35px;
+  padding: 15px 30px;
   /* Espaciado interno */
   text-align: center;
   /* Alineación del texto */
@@ -40,7 +40,7 @@ main {
   /* Sin subrayado */
   display: inline-block;
   /* Mostrar en línea */
-  font-size: 16px;
+  font-size: 13px;
   /* Tamaño de fuente */
   margin: 4px 2px;
   /* Margen */
