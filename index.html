@@ -7,8 +7,14 @@
   <meta property="description" content="Desarrollo de aplicaciones móviles" />
   <meta property="og:site_name" content="Prodis">
   <meta property="og:url" content="https://prodiscu.vercel.app/">
-  <meta property="og:image" content="images/link-image.png">
+  <meta property="og:image" content="https://prodiscu.vercel.app/images/link-preview.png">
 
+   <!-- Meta Tags para Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prodis">
+  <meta name="twitter:description" content="Desarrollo de aplicaciones móviles">
+  <meta name="twitter:image" content="https://prodiscu.vercel.app/images/link-preview.png">
+  
   <!-- Titulo de la web -->
   <title>Prodis</title>
 
@@ -24,7 +30,12 @@
 <header>
 
   <!--title header -->
-  <h1>Prodis</h1>
+  <div onclick="window.location.href='#';" style="display: flex;">
+    <img src="/images/logo-prodis-vector.svg" style="width: 12%;" alt="/images/logo.png">
+
+    <h2 style="padding-top: 10px; user-select: none;">rodis</h2>
+  </div>
+
 
   <button onclick="window.location.href='contact.html';" class="boton-contacto">
     Contactar
@@ -44,7 +55,7 @@
 
 
   <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-      <path d="M-1.41,147.33 C194.91,82.58 288.13,-45.92 507.06,101.51 L521.19,153.31 L1.42,192.16 Z" style="stroke: none; fill: #163020;"></path>
+      <path d="M-1.41,147.33 C194.91,82.58 288.13,-45.92 507.06,101.51 L521.19,153.31 L1.42,192.16 Z" style="stroke: none; fill: #615EFC;"></path>
     </svg></div>
 
   <div class="wave-top">
@@ -52,7 +63,7 @@
 
     <!--Billetera -->
     <div class="card-rounded">
-      <img src="/images/billetera-app.png" alt="billetera.png" style="width: 100%; border-radius: 17px;" />
+      <img src="/images/billetera-mockup.png" alt="billetera.png" style="width: 100%; border-radius: 17px;" />
 
       <!-- titulo y descripcion del proyecto-->
       <div style="padding: 1rem;">
@@ -75,7 +86,7 @@
 
     <!-- Apklis librería-->
     <div class="card-rounded">
-      <img src="/images/apklis.png" alt="apklis-lib.png" style="width: 100%; border-radius: 17px;" />
+      <img src="/images/apklis-api.png" alt="apklis-lib.png" style="width: 100%; border-radius: 17px;" />
 
       <!-- titulo y descripcion del proyecto-->
       <div style="padding: 1rem;">
@@ -101,21 +112,21 @@
     <p>¡Gracias por el apoyo!</p>
 
     <div style="display: flex; margin-top: 2rem;" onclick="window.location.href='https://roclahy.com/';">
-      
+
       <svg style="width: 8%;" class='roclahy-svg-logo' enable-background='new 0 0 24.0 24.0' height='100%' version='1.1' viewbox='0 0 24.0 24.0' width='100%' x='0%' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0%'>
         <path d='M5.05,3.55L16.83,3.53L17.29,3.58L17.51,3.64L17.78,3.73L18.11,3.96L18.23,4.08L18.43,4.26L18.74,4.75L18.90,5.39L18.92,5.96L18.80,6.49L18.35,7.15L5.03,20.43L5.03,7.77L18.81,20.44' fill='#FFFFFF' fill-opacity='0.000' fill-rule='nonzero' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='1.000' stroke-width='3.144'></path>
       </svg>
-      <h2 style="margin-left: 0px;">oclahy</h2>
+      <h2 style="margin-left: 0px; color: black">oclahy</h2>
     </div>
-    
-    <button onclick="window.location.href='sponsor.html';" ><i class="fa-solid fa-heart fa-xl" style="margin-right: 4px; color: gray;"></i>Conviértete en patrocinador</button>
+
+    <button onclick="window.location.href='sponsor.html';"><i class="fa-solid fa-heart fa-xl" style="margin-right: 4px; color: #7E8EF1;"></i>Conviértete en patrocinador</button>
 
   </div>
-  
-  
+
+
   <!-- script -->
   <script src="/js/main.js"></script>
-
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 
 <hr>

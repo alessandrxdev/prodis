@@ -10,20 +10,29 @@
   <!-- style -->
   <link rel="stylesheet" href="/css/main.css">
 </head>
+
 <!-- header -->
 <header>
+
   <!--title header -->
-  <h1>Prodis</h1>
+  <div onclick="window.location.href='#';" style="display: flex;">
+    <img src="/images/logo-prodis-vector.svg" style="width: 12%;" alt="/images/logo.png">
+
+    <h2 style="padding-top: 10px; user-select: none;">rodis</h2>
+  </div>
+
+
   <button onclick="window.location.href='contact.html';" class="boton-contacto">
     Contactar
   </button>
+
 </header>
 
 <body>
   <div class="sponsor-content">
-    
+
     <h2>Patrocinio</h2>
-    
+
     <p>Al patrocinarnos contribuyes con el desarrollo de nuestros proyectos ya que los mismos son totalmente gratuitos. El patrocinio incluye una presentación de tu marca tanto en la web principal como en nuestros canales de información y publicidades de nuestros productos, también un backlink desde la web principal.</p>
     </br>
     <p>Si estás interesado en apoyarnos, seleccione cualquiera de los planes y completa el formulario de patrocinio. Tan pronto como recibamos la información, nos comunicaremos contigo. <b>Nos reservamos el derecho de aceptar o rechazar el patrocinio en función de nuestros valores y del tipo de proyecto que presentes.</b></p>
@@ -46,7 +55,7 @@
           <div class="dropdown-button" id="editText">Selecciona un plan</div>
           <div class="dropdown-content">
             <a href="#" data-value="un-mes">$50 / 1 mes</a>
-             <a href="#" data-value="dos-mes">$100 / 2 meses</a>
+            <a href="#" data-value="dos-mes">$100 / 2 meses</a>
             <a href="#" data-value="tres-meses">$135 / 3 meses (ahorras 10%)</a>
             <a href="#" data-value="seis-meses">$240 / 6 meses (ahorras 20%)</a>
             <a href="#" data-value="anual">$420 / 1 año (ahorras 30%)</a>
@@ -56,20 +65,20 @@
 
       </div>
 
-    <div class="input-design">
+      <div class="input-design">
         <label for="description">¿De qué trata tú proyecto?<b style="color: red;">*</b></label>
         <textarea rows="6" id="description" name="description" required></textarea>
       </div>
-      
-    <button class="button-submit" type="submit">Solicitar</button>
+
+      <button class="button-submit" type="submit">Solicitar</button>
 
     </form>
 
   </div>
 
-  <script src="js/main.js">
-    js / main.js
-  </script>
+  <!-- script -->
+  <script src="/js/main.js"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 
 <hr>
@@ -78,4 +87,5 @@
   <p style="margin-top: 20px;">© 2024 PRODIS BY ALESSANDRO RODRÍGUEZ<br />SOFTWARE WITH ♥ FROM SANTA CLARA, CUBA.</p>
 
 </footer>
+
 </html>

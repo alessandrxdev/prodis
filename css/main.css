@@ -30,9 +30,8 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-header h1 {
-  font-family: Silkscreen;
-  color: #163020;
+header h2 {
+  font-family: Helvetica;
 }
 
 .menu-toggle {
@@ -62,11 +61,15 @@ body {
 }
 
 .content-top h1 {
-  color: #304D30;
+  color: #615EFC;
+}
+
+.content-top p {
+  color: #7E8EF1;
 }
 
 .wave-top {
-  background-color: #163020;
+  background-color: #615EFC;
   position: relative;
   padding: 2rem;
   text-align: left;
@@ -82,19 +85,19 @@ body {
   left: 0;
   width: 100%;
   height: 80px;
-  background: #163020;
+  background: #615EFC;
   background-size: auto;
 }
 
 .card-rounded {
   border-radius: 20px;
-  border: 2px solid #304D30;
+  border: 2px solid #7E8EF1;
   width: 100%;
   margin-top: 3rem;
 }
 
 .boton-redondeado {
-  background: #EEF0E5;
+  background: #7E8EF1;
   border-radius: 50%;
   border: none;
   padding: 12px 15px;
@@ -106,7 +109,7 @@ body {
 }
 
 .boton-contacto {
-  background: #B6C4B6;
+  background: #7E8EF1;
   border: none;
   border-radius: 20px;
   padding: 12px;
@@ -117,7 +120,7 @@ body {
   cursor: pointer;
   margin: auto;
   margin-right: 10px;
-  color: #000;
+  color: #fff;
 }
 
 img {
@@ -135,7 +138,7 @@ textarea {
 input:focus,
 textarea:focus {
   border-color: none;
-  box-shadow: none ;
+  box-shadow: none;
   outline: none;
 }
 
@@ -150,12 +153,14 @@ textarea:focus {
   margin-top: 30px;
   padding: 2rem;
   text-align: center;
+  color: #615EFC;
 }
+
 
 .sponsor p {
   font-size: 14px;
   padding-top: 10px;
-  color: #919294;
+  color: #7E8EF1;
   text-align: center;
 }
 
@@ -163,7 +168,7 @@ textarea:focus {
   margin-top: 3rem;
   border-radius: 20px;
   padding: 12px;
-  border: 2px solid #EEF0E5;
+  border: 1px solid #7E8EF1;
   background: none;
   font-size: 13px;
 }
@@ -185,12 +190,17 @@ svg {
   outline: none
 }
 
+.card-rounded i {
+  color: white;
+}
+
 /* sponsor content */
 .sponsor-content {
   margin-top: 80px;
   padding: 2rem;
   font-family: Verdana;
 }
+
 
 /* Estilo del dropdown */
 .dropdown {
@@ -250,13 +260,18 @@ hr {
   border: none;
 
 }
-.button-submit{
+
+.button-submit {
   padding: 15px 35px;
   margin-top: 20px;
   border-radius: 20px;
   border: none;
   color: white;
-  background: seagreen;
+  background: #615EFC;
+}
+
+button:hover {
+  background-color: #7E8EF1;
 }
 
 footer {

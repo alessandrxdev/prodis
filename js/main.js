@@ -24,3 +24,7 @@ window.addEventListener('click', (e) => {
     dropdown.classList.remove('active');
   }
 });
+
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); 
+    
+  };
