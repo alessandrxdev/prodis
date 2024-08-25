@@ -3,98 +3,111 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="description" content="Desarrollo de aplicaciones móviles" />
   <meta property="og:site_name" content="Prodis">
   <meta property="og:url" content="https://prodiscu.vercel.app/">
-  <meta property="og:image" content="/images/link-image.png">
+  <meta property="og:image" content="images/link-image.png">
+  
+  <!-- Titulo de la web -->
   <title>Prodis</title>
-  <!-- Custom Styles -->
-  <!-- Fontawesome icons-->
-  <link rel="stylesheet" href="style.css">
 
+  <!-- font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="/css/main.css">
+
+
 </head>
+
+<!-- header -->
 <header>
 
-  <h1 style="font-family: Silkscreen; color: #ECDFCC">Prodis</h1>
+  <!--title header -->
+  <h1>Prodis</h1>
+
+  <button onclick="window.location.href='contact.html';" class="boton-contacto">
+    Contactar
+  </button>
+  <!-- menu -->
+  <!--
+  <div class="menu-toggle">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  -->
 
 </header>
 
-
-<!--- contenido de la web -->
-
 <body>
-  <main>
-    <div class="content">
 
-      <!-- Breve presentación de lo que somos-->
-      <h4>¿Quienes somos?</h4>
-      <p style="font-size: 13px;">Prodis es el nombre que usamos para identificar las aplicaciones móviles que creamos. Nos gusta pensar en Prodis como una empresa de software dedicada a ofrecer soluciones móviles innovadoras y de alta calidad.</br>Conoce más sobre las aplicaciones que hemos creado. ¡Contáctanos para discutir tus necesidades y juntos encontremos la solución perfecta para ti!</p>
-    </div>
+  <div class="content-top">
+    <h1>Transformando ideas en código</h1>
+    <p>En <b>Prodis</b> desarrollamos soluciones de software innovadoras, diseñadas para satisfacer las necesidades diarias de la sociedad cubana y mejorar su calidad de vida.</p>
 
-    <!-- Proyectos -->
-    <div style="background: #3C3D37; padding: 2rem;">
-      <h2 style="text-align: center; color: white; margin-top: 50px;">Proyectos</h2>
+    <img src="/images/typing-code.svg" alt="code-typing.svg" style="margin-top: 3rem;">
 
-      <!-- App Billetera -->
-      <div class="imagen-redondeada">
-        <img src="/images/billetera-app.png" alt="billetera.png" style="width: 100%; border-radius: 17px;" />
-
-        <!-- titulo y descripcion del proyecto-->
-        <div style="padding: 1rem;">
-          <h3>Billetera</h3>
-          <p style="font-size: 13px">
-            Billetera es una aplicación para dispositivos con sistema operativo Android, creada con el objetivo de ayudar a los usarios de bancos Cubanos a guardar sus tarjetas de créditos para futuros usos, conocer las tasas de cambio vigentes en el país y contar dinero de forma rápida y sencilla.
-          </p>
-          <!-- botones de información -->
-
-          <!-- Github -->
-          <button onclick="window.location.href='https://www.github.com/alessandrxdev/billetera';" class="boton-redondeado"><i class="fa-brands fa-github fa-x1"></i></button>
-
-          <!-- Play Store-->
-          <button onclick="window.location.href='https://play.google.com/store/apps/details?id=com.arr.bancamovil';" class="boton-redondeado">
-            <i class="fa-brands fa-google-play fa-x1"></i>
-          </button>
-
-        </div>
-      </div>
-
-
-      <!-- Apklis librería-->
-      <div class="imagen-redondeada">
-        <img src="/images/apklis.png" alt="apklis-lib.png" style="width: 100%; border-radius: 17px;" />
-
-        <!-- titulo y descripcion del proyecto-->
-        <div style="padding: 1rem;">
-          <h3>ApklisApi</h3>
-          <p style="font-size: 13px">
-            ApklisApi es una librería creada para interactiar con la información de las aplicaciones alojadas en la tienda de aplicaciones Cubana <b>Apklis</b>, asi como comprobar las compras de aplicaciones realizadas en dicha tienda.
-          </p>
-
-          <!-- botones de información -->
-
-          <!-- Github -->
-          <button onclick="window.location.href='https://www.github.com/alessandrxdev/apklisapi';" class="boton-redondeado"><i class="fa-brands fa-github fa-x1"></i></button>
-
-        </div>
-      </div>
-      
-      
-    </div>
-  </main>
-</body>
-
-<!-- Footer -->
-<footer>
-  <div>
-
-    <i onclick="window.location.href='https://github.com/alessandrxdev/prodis';" style="margin: 6px;" class="fa-brands fa-github fa-2xl"></i>
-
-    <i onclick="window.location.href='https://t.me/ProdisCU';" style="margin: 6px;" class="fa-brands fa-telegram fa-2xl"></i>
   </div>
 
+
+  <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M-1.41,147.33 C194.91,82.58 288.13,-45.92 507.06,101.51 L521.19,153.31 L1.42,192.16 Z" style="stroke: none; fill: #163020;"></path>
+    </svg></div>
+
+  <div class="wave-top">
+    <h1>Proyectos</h1>
+
+    <!--Billetera -->
+    <div class="card-rounded">
+      <img src="/images/billetera-app.png" alt="billetera.png" style="width: 100%; border-radius: 17px;" />
+
+      <!-- titulo y descripcion del proyecto-->
+      <div style="padding: 1rem;">
+        <h3>Billetera</h3>
+        <p style="font-size: 13px">
+          Billetera es una aplicación para dispositivos con sistema operativo Android, creada con el objetivo de ayudar a los usarios de bancos Cubanos a guardar sus tarjetas de crédito para futuros usos, conocer las tasas de cambio vigentes en el país y contar dinero de forma rápida y sencilla.
+        </p>
+
+        <!-- botones de información -->
+        <!-- Github -->
+        <button onclick="window.location.href='https://www.github.com/alessandrxdev/billetera';" class="boton-redondeado"><i class="fa-brands fa-github fa-x1"></i></button>
+
+        <!-- Play Store-->
+        <button onclick="window.location.href='https://play.google.com/store/apps/details?id=com.arr.bancamovil';" class="boton-redondeado">
+          <i class="fa-brands fa-google-play fa-x1"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Apklis librería-->
+    <div class="card-rounded">
+      <img src="/images/apklis.png" alt="apklis-lib.png" style="width: 100%; border-radius: 17px;" />
+
+      <!-- titulo y descripcion del proyecto-->
+      <div style="padding: 1rem;">
+        <h3>ApklisApi</h3>
+        <p style="font-size: 13px">
+          ApklisApi es una librería creada para interactuar con la información de las aplicaciones alojadas en la tienda de aplicaciones Cubana <b>Apklis</b>, asi como comprobar las compras de aplicaciones realizadas en dicha tienda.
+        </p>
+
+        <!-- botones de información -->
+        <!-- Github -->
+        <button onclick="window.location.href='https://www.github.com/alessandrxdev/apklisapi';" class="boton-redondeado"><i class="fa-brands fa-github fa-x1"></i></button>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- script -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+<footer>
 
   <p style="margin-top: 20px;">© 2024 PRODIS BY ALESSANDRO RODRÍGUEZ<br />SOFTWARE WITH ♥ FROM SANTA CLARA, CUBA.</p>
 

@@ -1,0 +1,152 @@
+@font-face {
+  font-family: Silkscreen;
+  src: url('/fonts/slkscr.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background: ghostwhite;
+}
+
+header {
+  background: rgba(ghostwhite 0.5);
+  /* Fondo semi-transparente */
+  backdrop-filter: blur(10px);
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+header h1 {
+  font-family: Silkscreen;
+  color: #163020;
+}
+
+.menu-toggle {
+  width: 24px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  margin: auto;
+  margin-right: 40px;
+}
+
+.bar {
+  background-color: peachpuff;
+  margin: 5px 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-top {
+  padding: 1rem;
+  margin-top: 10rem;
+}
+
+.content-top h1 {
+  color: #304D30;
+}
+
+.wave-top {
+  background-color: #163020;
+  position: relative;
+  padding: 2rem;
+  text-align: left;
+  color: white;
+  overflow: hidden;
+}
+
+.wave-top::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -70px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #163020;
+  background-size: auto;
+}
+
+.card-rounded {
+  border-radius: 20px;
+  border: 2px solid #304D30;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.boton-redondeado {
+  background: #EEF0E5;
+  border-radius: 50%;
+  border: none;
+  padding: 12px 15px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.boton-contacto {
+  background: #B6C4B6;
+  border: none;
+  border-radius: 20px;
+  padding: 12px;
+  width: 100px;
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  cursor: pointer;
+  margin: auto;
+  margin-right: 10px;
+  color: #000;
+}
+
+img {
+  pointer-events: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+footer {
+  padding: 2rem;
+  background: none;
+  color: #000;
+  font-size: 12px;
+  text-align: center;
+}
