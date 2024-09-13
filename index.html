@@ -1,123 +1,77 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="description" content="Desarrollo de aplicaciones móviles" />
-  <meta property="og:site_name" content="Prodis">
-  <meta property="og:url" content="https://prodiscu.vercel.app/">
-  <meta property="og:image" content="https://prodiscu.vercel.app/images/link-preview.png">
-
-   <!-- Meta Tags para Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Prodis">
-  <meta name="twitter:description" content="Desarrollo de aplicaciones móviles">
-  <meta name="twitter:image" content="https://prodiscu.vercel.app/images/link-preview.png">
-  
-  <!-- Titulo de la web -->
-  <title>Prodis</title>
+  <title></title>
 
   <!-- font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- style -->
-  <link rel="stylesheet" href="/css/main.css">
-
-
+  <link rel="stylesheet" href="/css/mainn.css">
 </head>
 
-  <!-- Header -->
-  <header>
-    <div onclick="window.location.href='/index.html';" style="display: flex; align-items: center;">
-      <img src="/images/prodis-vector.svg" style="width: 15%;" alt="Logo Prodis">
-      <h2 style="padding-top: 10px; user-select: none;">Prodis</h2>
-    </div>
-  </header>
+<header>
+
+  <div class="content-header">
+    <img src="images/prodis-vector.svg" style="width: 20%;" alt="prodis-vector.svg">
+
+    <h2>Prodis</h2>
+
+  </div>
+
+</header>
 
 <body>
 
-  <div class="content-top">
-    <h1>Transformando ideas en código</h1>
-    <p>En <b>Prodis</b> desarrollamos soluciones de software innovadoras, diseñadas para satisfacer las necesidades diarias de la sociedad cubana y mejorar su calidad de vida.</p>
+  <!-- top content -->
+  <main>
+    <div class="clock" style="margin-top:40%; text-align: center;" id="clock"></div>
 
-    <img src="/images/typing-code.svg" alt="code-typing.svg" style="margin-top: 3rem;">
+    <div class="content-top">
+      <h1>Experiencia</h1>
+      <p>Con más de cinco años de experiencia en el desarrollo de aplicaciones móviles, hemos centrado nuestros esfuerzos en ofrecer soluciones que combinan utilidad y diseño moderno. Nos especializamos en el uso de las tecnologías más avanzadas disponibles en el mercado, garantizando a los usuarios productos completos, funcionales y de gran valor práctico.</p>
+    </div>
 
-  </div>
+    <!-- Proyectos -->
+    <div class="slanted-edge">
+
+      <h2 style="margin-top: 90px;">Proyectos</h2>
+
+      <img class="image" style="width: 100%;" src="mockups/mockup-servicel.png" alt="mockup-servicel.png">
+
+      <p>Nos dedicamos a desarrollar herramientas digitales que impactan positivamente la vida diaria de los usuarios. Nuestro objetivo es facilitar y mejorar la experiencia de las personas a través de soluciones tecnológicas innovadoras y accesibles. Trabajamos con pasión y compromiso para identificar necesidades y transformarlas en productos que simplifican tareas cotidianas, aumentan la productividad y permiten un mayor control sobre su entorno digital. Creemos que la tecnología debe ser una aliada que potencie el bienestar y la eficiencia, por lo que nuestras soluciones están diseñadas para ser intuitivas, eficientes y centradas en el usuario.</p>
+
+    </div>
+
+    <div class="sponsor">
+      <h2>Nuestros patrocinadores</h2>
+      <p>¡Gracias por el apoyo!</p>
 
 
-  <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-      <path d="M-1.41,147.33 C194.91,82.58 288.13,-45.92 507.06,101.51 L521.19,153.31 L1.42,192.16 Z" style="stroke: none; fill: #8630FF;"></path>
-    </svg></div>
+      <div class="image" style="display: flex; margin-top: 2rem;" onclick="window.location.href='https://roclahy.com/';">
 
-  <div class="wave-top">
-    <h1>Proyectos</h1>
-
-    <!--Billetera -->
-    <div class="card-rounded">
-      <img src="/images/billetera-mockup.png" alt="billetera.png" style="width: 100%; border-radius: 17px;" />
-
-      <!-- titulo y descripcion del proyecto-->
-      <div style="padding: 1rem;">
-        <h3>Billetera</h3>
-        <p style="font-size: 13px">
-          Billetera es una aplicación para dispositivos con sistema operativo Android, creada con el objetivo de ayudar a los usarios de bancos Cubanos a guardar sus tarjetas de crédito para futuros usos, conocer las tasas de cambio vigentes en el país y contar dinero de forma rápida y sencilla.
-        </p>
-
-        <!-- botones de información -->
-        <!-- Github -->
-        <button onclick="window.location.href='https://www.github.com/alessandrxdev/billetera';" class="boton-redondeado"><i style="color: black;" class="fa-brands fa-github fa-x1"></i></button>
-
-        <!-- Play Store-->
-        <button onclick="window.location.href='https://play.google.com/store/apps/details?id=com.arr.bancamovil';" class="boton-redondeado">
-          <i style="color: black;" class="fa-brands fa-google-play fa-x1"></i>
-        </button>
-
+        <svg style="width: 8%;" class='roclahy-svg-logo' enable-background='new 0 0 24.0 24.0' height='100%' version='1.1' viewbox='0 0 24.0 24.0' width='100%' x='0%' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0%'>
+          <path d='M5.05,3.55L16.83,3.53L17.29,3.58L17.51,3.64L17.78,3.73L18.11,3.96L18.23,4.08L18.43,4.26L18.74,4.75L18.90,5.39L18.92,5.96L18.80,6.49L18.35,7.15L5.03,20.43L5.03,7.77L18.81,20.44' fill='#FFFFFF' fill-opacity='0.000' fill-rule='nonzero' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='1.000' stroke-width='3.144'></path>
+        </svg>
+        <h2 style="margin-left: 0px; color: white">oclahy</h2>
+      </div>
+      
+      
+      <div class="button" style="margin-top: 60px; text-align: center;">
+        <button>Convertirse en patrocinador </button>
       </div>
     </div>
 
-    <!-- Apklis librería-->
-    <div class="card-rounded">
-      <img src="/images/apklis-api.png" alt="apklis-lib.png" style="width: 100%; border-radius: 17px;" />
+  </main>
 
-      <!-- titulo y descripcion del proyecto-->
-      <div style="padding: 1rem;">
-        <h3>ApklisApi</h3>
-        <p style="font-size: 13px">
-          ApklisApi es una librería creada para interactuar con la información de las aplicaciones alojadas en la tienda de aplicaciones Cubana <b>Apklis</b>, asi como comprobar las compras de aplicaciones realizadas en dicha tienda.
-        </p>
-
-        <!-- botones de información -->
-        <!-- Github -->
-        <button onclick="window.location.href='https://www.github.com/alessandrxdev/apklisapi';" class="boton-redondeado"><i style="color: black;" class="fa-brands fa-github fa-x1"></i></button>
-
-      </div>
-    </div>
-
-
-  </div>
-
-  <!-- Patrocinio -->
-  <div class="sponsor">
-
-    <h1>Nuestros patrocinadores</h1>
-    <p>¡Gracias por el apoyo!</p>
-
-    <div style="display: flex; margin-top: 2rem;" onclick="window.location.href='https://roclahy.com/';">
-
-      <svg style="width: 8%;" class='roclahy-svg-logo' enable-background='new 0 0 24.0 24.0' height='100%' version='1.1' viewbox='0 0 24.0 24.0' width='100%' x='0%' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0%'>
-        <path d='M5.05,3.55L16.83,3.53L17.29,3.58L17.51,3.64L17.78,3.73L18.11,3.96L18.23,4.08L18.43,4.26L18.74,4.75L18.90,5.39L18.92,5.96L18.80,6.49L18.35,7.15L5.03,20.43L5.03,7.77L18.81,20.44' fill='#FFFFFF' fill-opacity='0.000' fill-rule='nonzero' stroke-linecap='round' stroke-linejoin='round' stroke-opacity='1.000' stroke-width='3.144'></path>
-      </svg>
-      <h2 style="margin-left: 0px; color: white">oclahy</h2>
-    </div>
-
-    <button onclick="window.location.href='sponsor.html';"><i class="fa-solid fa-heart fa-xl" style="margin-right: 4px; color: white;"></i>Conviértete en patrocinador</button>
-
-  </div>
 
 
   <!-- script -->
-  <script src="/js/main.js"></script>
+  <script src="js/main.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
+
 </body>
 
 <footer>

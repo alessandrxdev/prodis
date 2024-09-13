@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background: #171C21;
+}
+
+header {
+  backdrop-filter: blur(20px);
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+}
+
+.content-header h2 {
+  color: #CDFB7C;
+  font-size: 38px;
+}
+
+.clock {
+  font-size: 48px;
+  font-weight: bold;
+  padding: 20px;
+  align-items: center;
+  color: #CDFB7C;
+  text-shadow: 0px 2px 16px #CDFB7C;
+  backdrop-filter: blur(10px);
+  border: 1px solid transparent;
+  background: transparent;
+}
+
+.content-top {
+  text-align: left;
+  padding: 2rem;
+  color: #CDFB7C;
+  margin-top: 30%;
+}
+
+.content-top p {
+  text-align: left;
+  color: ghostwhite;
+  font-size: 15px;
+}
+
+.image-rounded {
+  border-radius: 30px;
+  margin-top: 20px;
+  border: 3px solid rgb(31, 27, 24);
+  padding: 10px;
+  background: rgb(31, 27, 24);
+  box-shadow: 0px 2px 16px #42445A;
+}
+
+.slanted-edge {
+  --p: 70px;
+  width: 100%;
+  aspect-ratio: 1;
+  clip-path: polygon(0 var(--p), 100% 0, 100% 100%, 0 100%);
+  background: #CDFB7C;
+  color: black;
+  padding: 2rem;
+}
+
+.sponsor{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  color: #FFF;
+}
+.sponsor p, h2{
+  text-align: center;
+}
+
+footer {
+  padding: 2rem;
+  background: #8630FF;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+footer i {
+  color: #DDE0FF;
+}
+
+.image{
+  width: 330px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+@keyframes enter-animation {
+	0% {
+		transform: translateY(100px);
+    opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+    opacity: 1;
+	}
+}
+@media (prefers-reduced-motion: no-preference) {
+  .image-animation {
+    animation: enter-animation 0.8s 1;
+  }
+}
+
+
+
+.roclahy-svg-logo path {
+  stroke: #9D01C6;
+}
+
+.drK .roclahy-svg-logo path {
+  stroke: #D754FE;
+}
+
+svg {
+  outline: none
+}
+
+button{
+  background: #7A38FF;
+  border-radius: 30px;
+  padding: 10px;
+  color: #FFF;
+  border: none;
+}

@@ -1,30 +1,46 @@
-const dropdown = document.querySelector('.dropdown');
-const dropdownButton = document.getElementById('editText');
-const options = document.querySelectorAll('.dropdown-content a');
-const hiddenInput = document.getElementById('selectedOption');
+function actualizarReloj() {
+  const ahora = new Date();
+  let horas = ahora.getHours();
+  let minutos = ahora.getMinutes();
+  let segundos = ahora.getSeconds();
+  
+  // Convertir de 24 horas a 12 horas
+  if (horas >= 12) {
+    horas = horas > 12 ? horas - 12 : horas;
+  }
+  
+  // Ajustar para mostrar 12 en vez de 0 en medianoche
+  horas = horas === 0 ? 12 : horas;
 
-// Agrega un evento para mostrar/ocultar el contenido al hacer clic en el botón
-dropdownButton.addEventListener('click', () => {
-  dropdown.classList.toggle('active');
-});
+  // Añadir un 0 delante si el número es menor a 10
+  horas = horas < 10 ? "0" + horas : horas;
+  minutos = minutos < 10 ? "0" + minutos : minutos;
+  segundos = segundos < 10 ? "0" + segundos : segundos;
 
-// Agrega eventos a las opciones del dropdown
-options.forEach(option => {
-  option.addEventListener('click', (e) => {
-    e.preventDefault(); // Evita el comportamiento predeterminado del enlace
-    dropdownButton.textContent = option.textContent; // Rellena el campo de texto con la opción seleccionada
-    hiddenInput.value = option.dataset.value; // Establece el valor del campo oculto
-    dropdown.classList.remove('active'); // Oculta el dropdown después de seleccionar una opción
+  const horaActual = horas + ":" + minutos + ":" + segundos;
+  
+  document.getElementById("clock").innerText = horaActual;
+}
+
+// Actualizar el reloj cada segundo
+setInterval(actualizarReloj, 1000);
+
+// Ejecutar la función al cargar la página
+actualizarReloj();
+
+
+const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('image-animation');
+    }
   });
 });
 
-// Opcional: Ocultar el dropdown si se hace clic fuera de él
-window.addEventListener('click', (e) => {
-  if (!dropdown.contains(e.target)) {
-    dropdown.classList.remove('active');
-  }
+const viewbox = document.querySelectorAll('.image');
+viewbox.forEach(image => {
+  observer.observe(image);
 });
-
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); 
-    
-  };
