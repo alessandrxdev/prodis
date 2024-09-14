@@ -34,9 +34,6 @@ header {
   font-size: 38px;
 }
 
-main {
-  padding: 1rem;
-}
 
 .clock {
   font-size: 48px;
@@ -157,6 +154,7 @@ button {
 .help {
   margin-top: 20px;
   color: #FFF;
+  padding: 1rem;
 }
 
 .help h3 {
