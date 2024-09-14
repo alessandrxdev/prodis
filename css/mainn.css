@@ -34,6 +34,10 @@ header {
   font-size: 38px;
 }
 
+main {
+  padding: 1rem;
+}
+
 .clock {
   font-size: 48px;
   font-weight: bold;
@@ -78,13 +82,15 @@ header {
   padding: 2rem;
 }
 
-.sponsor{
+.sponsor {
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding: 2rem;
   color: #FFF;
 }
-.sponsor p, h2{
+
+.sponsor p,
+h2 {
   text-align: center;
 }
 
@@ -94,13 +100,14 @@ footer {
   color: #fff;
   font-size: 12px;
   text-align: center;
+  margin-top: 3rem;
 }
 
 footer i {
   color: #DDE0FF;
 }
 
-.image{
+.image {
   width: 330px;
   height: auto;
   border-radius: 8px;
@@ -108,15 +115,17 @@ footer i {
 }
 
 @keyframes enter-animation {
-	0% {
-		transform: translateY(100px);
+  0% {
+    transform: translateY(100px);
     opacity: 0;
-	}
-	100% {
-		transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
     opacity: 1;
-	}
+  }
 }
+
 @media (prefers-reduced-motion: no-preference) {
   .image-animation {
     animation: enter-animation 0.8s 1;
@@ -137,10 +146,28 @@ svg {
   outline: none
 }
 
-button{
+button {
   background: #7A38FF;
   border-radius: 30px;
   padding: 10px;
   color: #FFF;
   border: none;
+}
+
+.help {
+  margin-top: 20px;
+  color: #FFF;
+}
+
+.help h3 {
+  margin-top: 50px;
+}
+
+.help img {
+  width: 50%;
+  margin-top: 20px;
+}
+
+a {
+  color: #CDFB7C;
 }
